@@ -1,3 +1,4 @@
 redis[hiredis]
 flask
 requests
+flask-cors

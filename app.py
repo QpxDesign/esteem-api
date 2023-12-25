@@ -3,9 +3,10 @@ import redis
 import json 
 import time 
 import requests
-
+from flask_cors import CORS
 r = redis.Redis(host='host.docker.internal', port=6379, db=0)
 app = Flask(__name__)
+CORS(app)
 
 DATA_EXPIRY_LENGTH = 3600 # Seconds, equal to one hour (60*60)
 
