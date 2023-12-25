@@ -4,7 +4,7 @@ import json
 import time 
 import requests
 
-r = redis.Redis(host='localhost', port=6379, db=0)
+r = redis.Redis(host='host.docker.internal', port=6379, db=0)
 app = Flask(__name__)
 
 DATA_EXPIRY_LENGTH = 3600 # Seconds, equal to one hour (60*60)
