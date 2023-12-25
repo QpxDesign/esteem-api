@@ -4,7 +4,7 @@ import json
 import time 
 import requests
 from flask_cors import CORS
-r = redis.Redis(host='host.docker.internal.redis', port=6379, db=0)
+r = redis.Redis(host='127.0.0.1', port=6379, db=0)
 app = Flask(__name__)
 CORS(app)
 
