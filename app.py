@@ -11,7 +11,7 @@ DATA_EXPIRY_LENGTH = 3600 # Seconds, equal to one hour (60*60)
 
 @app.route("/")
 def hello_world():
-    return r.get('foo')
+    return "Esteem API"
 
 @app.route("/get-snowy-cities")
 def get_snowy_cities():
