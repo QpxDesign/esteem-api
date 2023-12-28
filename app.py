@@ -42,12 +42,13 @@ def get_snowy_cities():
         return data
     
     def filter_for_snow(data):
+        SNOW_THRESHOLD_IN = 0.5
         try:
             ans = []
             data = list(data.values())
             for d in data:
                 print(d)
-                if sum(d['snowfall_hours'][:90]) > 0:
+                if sum(d['snowfall_hours'][:90]) > SNOW_THRESHOLD_IN:
                     ans.append(d)
             return ans
         except Exception as err:
