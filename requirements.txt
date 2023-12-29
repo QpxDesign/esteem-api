@@ -2,3 +2,5 @@ redis[hiredis]
 flask
 requests
 flask-cors
+eccodes
+cdsapi

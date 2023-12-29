@@ -1,1 +1,4 @@
-__pycache__/
+src/gc_forecast/data/models
+src/gc_forecast/data/stats/
+src/gc_forecast/data/tests/
+src/gc_forecast/recent/
